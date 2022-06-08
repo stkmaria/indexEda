@@ -9,7 +9,9 @@ button {
     border: none;
     cursor: pointer;
 }
-
+a {
+    text-decoration: none;
+}
 header {
     max-width: 1196px;
     margin: 0 auto;
@@ -46,6 +48,9 @@ header {
 .search-form {
     position: relative;
     width: 620px;
+}
+.search-mobile {
+    display: none;
 }
 .enter {
     background: #EBEBEB;
@@ -109,7 +114,7 @@ header {
     padding: 77px 100px 77px 100px;
 }
 .slider-btn {
-    width: 246;
+    width: 246px;
     background: #F47322;
     border-radius: 25px;
     font-weight: 500;
@@ -148,16 +153,16 @@ header {
     color: #FFFFFF;
     width: 225px;
     margin-bottom: 0;
+    margin-top: 0;
 }
-.bonus .prise {
+.bonus .price {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
     color: #FFFFFF;
     margin-top: 52px;
     margin-bottom: 0;
-    margin-top: 0;
 }
-.bonus .prise span {
+.bonus .price span {
     font-size: 30px;
 }
 .bonus-btn {
@@ -229,14 +234,16 @@ header {
     left: 10.07px;
     top: 16px;
     color: #49494F;
+    padding: 5px 10px;
 }
 .green {
-    width: 109.8px;
+    width: 109px;
     height: 33px;
     left: 317.07px;
     top: 16px;
     background: #AEBC41;
     color: #FFFFFF;
+    padding: 5px 10px;
 }
 .dark-red {
     background: #B86B78;
@@ -245,6 +252,7 @@ header {
     left: 624px;
     top: 16px;
     color: #FFFFFF;
+    padding: 5px 10px;
 }
 .orange {
     width: 83px;
@@ -253,6 +261,7 @@ header {
     top: 16px;
     background: #D68334;
     color: #FFFFFF;
+    padding: 5px 10px;
 }
 .red {
     width: 95px;
@@ -261,6 +270,7 @@ header {
     top: 16px;
     background: #CD6255;
     color: #FFFFFF;
+    padding: 5px 10px;
 }
 .yellow {
     width: 101px;
@@ -269,6 +279,7 @@ header {
     top: 16px;
     background: #FFFDBF;
     color: #49494F;
+    padding: 5px 10px;
 }
 .light-yellow {
     background: #F6FDC8;
@@ -277,6 +288,7 @@ header {
     left: 624px;
     top: 16px;
     color: #49494F;
+    padding: 5px 10px;
 }
 .pink {
     background: #FEF7FE;
@@ -285,6 +297,7 @@ header {
     left: 931px;
     top: 16px;
     color: #49494F;
+    padding: 5px 10px;
 }
 .catalog {
     width: 100%;
@@ -300,4 +313,164 @@ header {
 .categories h2 {
     font-weight: 500;
     font-size: 32px;
+}
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 52px 0;
+    display: flex;
+    gap: 58px;
+}
+.categories a {
+    font-size: 20px;
+    color: #49494F;
+}
+.ui-tabs-active .ui-tabs-anchor {
+    color: #F37321;
+}
+.food-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex-basis: 270px;
+}
+.food-item img {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+.food-item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 21px 23px 13px;
+}
+.food-item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+    margin: 13px 27px 36px 23px;
+}
+.food-item .price {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+}
+.food-item .weight {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+.food-cart {
+    border: 2px solid #F37321;
+    border-radius: 33px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F37321;
+    padding: 16px 25px 15px;
+    background: #ffffff;
+}
+.food-info {
+    margin: 36px 24px 0 23px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 21px;
+}
+.food-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: cpase-between;
+}
+.food-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+.benefits {
+    max-width: 1191px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 202px;
+}
+.benefits-item svg {
+    fill: #F37321;
+    stroke: #F37321;
+}
+.benefits-item:hover svg {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 1;
+}
+.benefits-item {
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 30px 23px 25px 24px;
+    text-align: center;
+    flex-basis: 270px;
+}
+.benefits-item:hover {
+    background: #F37321;
+    border: 1px solid #F37321;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+.benefits-item h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+.benefirs-item p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494F;
+}
+.benefits-item:hover p {
+    color: #fff;
+}
+.benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 37px;
+}
+footer {
+    background: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-content {
+    max-width: 1191px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info {
+    display: flex;
+    gap: 50px;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    align-self: center;
+}
+footer a {
+    color: #000;
+    text-decoration: underline;
+}
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-info img {
+    width: 101px;
+    height: 101px;
 }
