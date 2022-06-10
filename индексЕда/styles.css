@@ -17,7 +17,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 13px 0 20px;
+    padding: 13px 30px 20px;
 }
 .logo {
     width: 130px;
@@ -83,7 +83,8 @@ header {
 }
 .slider {
     max-width: 1196px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding: 0 30px; 
 }
 .slider-item h1 {
     font-size: 50px;
@@ -127,6 +128,7 @@ header {
     margin: 50px auto;
     display: flex;
     gap: 54px;
+    padding: 0 30px;
 }
 .bonus-item {
     flex-basis: 50%;
@@ -217,9 +219,11 @@ header {
     border-radius: 18px;
     position: relative;
     margin: 0;
+    flex-basis: calc((100% - 32px*3) / 4);
 }
 .gallery img {
     border-radius: 18px;
+    max-width: 100%;
 }
 .gallery figcaption {
     position: absolute;
@@ -305,10 +309,13 @@ header {
     margin-top: 100px;
     padding-top: 40px;
     padding-bottom: 172px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .categories {
     max-width: 1196px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 .categories h2 {
     font-weight: 500;
@@ -332,7 +339,7 @@ header {
     background: #FFFFFF;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    flex-basis: 270px;
+    flex-basis: calc((100% - 37px*3) / 4); /*270px*/
 }
 .food-item img {
     border-radius: 20px 20px 0 0;
@@ -391,7 +398,7 @@ header {
 .benefits {
     max-width: 1191px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px 30px 202px;
     padding-bottom: 202px;
 }
 .benefits-item svg {
@@ -410,7 +417,7 @@ header {
     border-radius: 18px;
     padding: 30px 23px 25px 24px;
     text-align: center;
-    flex-basis: 270px;
+    flex-basis: calc((100% - 37px*3) / 4); /*270px*/
 }
 .benefits-item:hover {
     background: #F37321;
@@ -448,6 +455,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
 }
 .footer-info {
     display: flex;
